@@ -12,10 +12,14 @@ const recuerdos = {
     dic1: {
         titulo: "La cita perfecta",
         imagenes: [
-            "img/fecha1.jpeg",
-            "img/fecha1_1.jpeg",
-            "img/fecha1_2.jpeg",
-            "img/fecha1_3.jpeg"
+            "img/fecha2.jpeg",
+            "img/fecha2_1.jpeg",
+            "img/fecha2_2.jpeg",
+            "img/fecha2_3.jpeg",
+            "img/fecha2_4.jpeg",
+            "img/fecha2_5.jpeg",
+            "img/fecha2_6.jpeg",
+            "img/fecha2_7.jpeg"
         ],
         descripcion: "Una cita increíble contigo 💖",
         musica: "music/cancion1.mp3",
@@ -165,3 +169,4 @@ audio.addEventListener("timeupdate", () => {
 audio.addEventListener("ended", () => {
     playBtn.textContent = "▶";
 });
+
