@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<title>Nuestros Momentos</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="background-fixed"></div>
+
+<div class="app">
+
+<header>
+    <h1>💖 Nuestros Momentos 💖</h1>
+</header>
+
+<section class="calendar-container">
+    <div class="month">
+        <h3>Diciembre 2025</h3>
+        <div class="days-flex">
+            <div class="date-circle" onclick="cargarRecuerdo('dic1')">1</div>
+        </div>
+    </div>
+
+    <div class="month">
+        <h3>Enero 2026</h3>
+        <div class="days-flex">
+            <div class="date-circle" onclick="cargarRecuerdo('ene8')">8</div>
+            <div class="date-circle" onclick="cargarRecuerdo('ene12')">12</div>
+        </div>
+    </div>
+</section>
+
+<section id="display-card" class="content-card hidden">
+    <h2 id="titulo"></h2>
+
+    <div class="slider" id="slider">
+        <button class="arrow" onclick="anterior()">❮</button>
+        <img id="slider-img" alt="recuerdo">
+        <button class="arrow" onclick="siguiente()">❯</button>
+    </div>
+
+    <div class="rating">
+        <span onclick="calificar(1)">★</span>
+        <span onclick="calificar(2)">★</span>
+        <span onclick="calificar(3)">★</span>
+        <span onclick="calificar(4)">★</span>
+        <span onclick="calificar(5)">★</span>
+    </div>
+
+    <p id="desc"></p>
+
+    <div class="recomendaciones">
+        <h3>Recomendaciones 💬</h3>
+        <textarea id="texto-reco" placeholder="Escribe aquí..."></textarea>
+        <button onclick="guardarRecomendacion()">Guardar</button>
+    </div>
+</section>
+
+<footer class="music-player">
+    <button id="playPause" onclick="toggleMusic()">▶</button>
+
+    <div class="music-info">
+        <span class="song-title" id="songTitle">Nuestra canción 💖</span>
+        <div class="progress-bar">
+            <div class="progress-fill" id="progress"></div>
+        </div>
+    </div>
+
+    <audio id="audio"></audio>
+</footer>
+
+
+</div>
+
+<div id="modal" class="modal" onclick="cerrarModal()">
+    <img id="modal-img">
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
