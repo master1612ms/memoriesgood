@@ -16,6 +16,7 @@ const recuerdos = {
             "img/fecha1_1.jpeg",
             "img/fecha1_2.jpeg",
             "img/fecha1_3.jpeg",
+            "img/fecha1_4.jpeg",
         ],
         descripcion: "Una cita increíble contigo 💖",
         musica: "music/cancion1.mp3",
@@ -168,5 +169,6 @@ audio.addEventListener("timeupdate", () => {
 audio.addEventListener("ended", () => {
     playBtn.textContent = "▶";
 });
+
 
 
